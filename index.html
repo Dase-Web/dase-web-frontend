@@ -32,7 +32,7 @@
         </div>
         <div class="mobile-navbar">
             <div class="logo">
-                <img src="images/Logo.png" alt="">
+                Dase Web
             </div>
             <div class="hamburger-menu" id="hamburger">
                 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,6 @@
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Service</a></li>
                             <li><a href="#">Feature</a></li>
-                            <li><a href="#">Product</a></li>
                             <li><a href="#">Testimonial</a></li>
                             <li><a href="#">FAQ</a></li>
                             <div>
@@ -176,4 +175,12 @@
             </div>
         </div>
 </body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('visible');
+    })
+</script>
 </html>
