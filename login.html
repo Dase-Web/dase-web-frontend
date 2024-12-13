@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Login - Dase Web </title>
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                Dase Web
+            </div>
+            <div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Feature</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+            </div>
+            <div>
+                <button style="color: #673AB7; background-color: transparent;">Login</button>
+                <button style="margin-right: 120px; margin-left: 14px;">Sign up</button>
+            </div>
+        </div>
+        <div class="mobile-navbar">
+            <div class="logo">
+                Dase Web
+            </div>
+            <div class="hamburger-menu" id="hamburger">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 7L4 7" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M20 12L4 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M20 17L4 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+            </div>
+        </div>
+            <div class="mobile-menu">
+                <ul id="mobile-menu" class="hidden">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Feature</a></li>
+                            <li><a href="#">Testimonial</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <div>
+                                <button style="color: #673AB7;">Login</button>
+                                <button style="margin-right: 120px; margin-left: 14px;">Sign up</button>
+                            </div>
+                        </div>
+                </ul>
+        </header>
+    <div class="auth-body">
+    <div class="auth-container">
+        <h1 class="auth-head">Log in</h1>
+        <form>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <div class="auth-forgot">
+                <a href="#">Forgot your password?</a>
+            </div>
+            <button type="submit">Log in</button>
+        </form>
+        <div class="auth-text">
+            Don't have an account? <a href="/signup.html">Sign up</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
