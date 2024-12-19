@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app-styles.css">
+    <title>Browse Tasks</title>
+</head>
+<body>
+    <div class="app-top">
+        <div class="app-nav">
+            <div class="logo">
+                Dase Web
+            </div>
+
+            <div class="hamburger-menu" id="hamburger">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 7L4 7" stroke="#ffff" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M20 12L4 12" stroke="#ffff" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M20 17L4 17" stroke="#ffff" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+            </div>
+            </div>
+                <div class="mobile-menu">
+                    <ul id="mobile-menu" class="hidden">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Browse Taks</a></li>
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Setting</a></li>
+                        <li><a href="#">Logout</a></li>
+                </ul>
+                </div>
+        <div class="app-nav-head">
+            Browse Tasks
+        </div>
+    </div>
+    <div class="tasks-search">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="tasks-grid">
+        <div class="each-task">
+            <div class="task-title">
+                Follow X account
+            </div>
+            <div class="task-creator">
+                Top Sellers
+            </div>
+            <div class="task-price">
+                <span class="currency">$</span>1.00
+            </div>
+        </div>
+
+        <div class="each-task">
+            <div class="task-title">
+                BetNaija Refer
+            </div>
+            <div class="task-creator">
+                Top Sellers
+            </div>
+            <div class="task-price">
+                <span class="currency"> $</span> 1.00
+            </div>
+        </div>
+
+        <div class="each-task">
+            <div class="task-title">
+                Watch my Youtube videos
+            </div>
+            <div class="task-creator">
+                Top Sellers
+            </div>
+            <div class="task-price">
+                <span class="currency"> $</span> 1.00
+            </div>
+        </div>
+
+        <div class="each-task">
+            <div class="task-title">
+                Download My App
+            </div>
+            <div class="task-creator">
+                Top Sellers
+            </div>
+            <div class="task-price">
+                <span class="currency"> $</span> 1.00
+            </div>
+        </div>
+
+        <div class="each-task">
+            <div class="task-title">
+                I will Create 1900+ Do-Follow Backlinks For Top Ranking
+            </div>
+            <div class="task-creator">
+                Top Sellers
+            </div>
+            <div class="task-price">
+                <span class="currency"> $</span> 1.00
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('visible');
+    })
+</script>
+</html>

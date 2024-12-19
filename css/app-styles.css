@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Inter;
+    background-color: #F9FAFB;
+}
+
+.app-top{
+    background-color: #673AB7;
+    background-image: url('../images/subtle-prism.svg');
+    background-size: 100%;
+    background-position: center;
+    color: white;
+
+}
+
+
+.logo{
+    font-size: 20px;
+    margin-left: 2%;
+    font-weight: 500;
+
+}
+.app-nav{
+    max-width: 100%;
+    min-height: 84px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.app-nav .logo{
+    font-weight: 600;
+}
+.mobile-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-navbar{
+    display: none;
+    background-color: #F5F7FA;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+}
+.mobile-navbar .hamburger-menu{
+    cursor: pointer;
+}
+.mobile-menu ul{
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #673AB7;
+    opacity: 0.95;
+    justify-content: center;
+    align-items: center;
+
+    top: 50px;
+}
+.mobile-menu ul.visible{
+    display: flex;
+}
+.mobile-menu ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.app-nav-head{
+    font-family: Intter;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 25px;
+}
+
+.tasks-search{
+    padding: 10px;
+}
+.tasks-search input{
+    width: 100%;
+    padding: 7px;
+}
+.tasks-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+}
+@media (max-width: 400px){
+    .tasks-grid{
+        grid-template-columns: 1fr;
+    }
+}
+.each-task{
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid #EFF0F6;
+    border-radius: 16px;
+    border-left:5px solid #673AB7;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0 ;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px #d1d2d6;
+    
+}
+.each-task:hover{
+    background-color: rgb(234, 224, 224);
+}
+
+.task-title{
+    font-weight: 600;
+}
+.task-creator{
+    text-align: left;
+    color:#673AB7;
+}
+
+.task-price{
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #4caf50;
+}
+.currency{
+    font-size: 1.2rem;
+}
+.task-button{
+    text-align: right;
+}
+.task-button button{
+    background-color: #673AB7;
+    color: white;
+    box-shadow: none;
+    border: none;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 12px;
+    margin-top: 10px;
+}
+.task-button a{
+    color: white;
+    text-decoration: none;
+}
+.dashboard-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-div{
+    background-color: white;
+    border: 1px solid #EFF0F6;
+    padding: 15px;
+    margin-top: 20px;
+    width: 80%;
+}
+@media (max-width: 400px){
+    .dashboard-div{
+        width: 100%;
+    }
+    
+}
