@@ -247,4 +247,6 @@ body{
   .each-task-history-card{
     background-color: #5e36a449;
     margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
   }
