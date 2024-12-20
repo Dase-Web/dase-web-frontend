@@ -5,15 +5,13 @@
 }
 body{
     font-family: Inter;
-    background-color: #F9FAFB;
+    background-color: #FFFF;
 }
 
 .app-top{
-    background-color: #673AB7;
-    background-image: url('../images/subtle-prism.svg');
-    background-size: 100%;
-    background-position: center;
-    color: white;
+    border-bottom: 1px solid gray;
+    color: #673AB7;
+    border-radius: 6px;
 
 }
 
@@ -26,7 +24,7 @@ body{
 }
 .app-nav{
     max-width: 100%;
-    min-height: 84px;
+    min-height: auto;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -178,3 +176,75 @@ body{
     }
     
 }
+
+.user-dash-greeting{
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.user-dash-greeting-info{
+    color: #585454;
+    padding-left: 10px;
+}
+.user-dashboard-card{
+    background-color: #7d43e3;
+    border-radius: 6px;
+    margin: 7px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 15px;
+}
+.user-dash-button{
+    display: flex;
+    justify-content: space-around;
+}
+.each-user-dash-button{
+    background-color: #5e36a449;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.each-user-dash-button-label{
+    text-align: center;
+    color: #585454;
+    font-size: 14px;
+}
+.user-dashboard-task-history{
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.user-dashboard-task-history-section{
+    padding: 15px;
+}
+
+.button-container {
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #5e36a449;
+    color: #7d43e3;
+  }
+  button.active {
+    background-color: #7d43e3;
+    color: white;
+  }
+  .task-history-container {
+    display: none;
+  }
+  .task-history-container.active {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .each-task-history-card{
+    background-color: #5e36a449;
+    margin-bottom: 10px;
+  }

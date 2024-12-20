@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Page</title>
+  <style>
+    /* Add basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .button-container {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+    }
+    button.active {
+      background-color: #0056b3;
+    }
+    .task-container {
+      display: none;
+    }
+    .task-container.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button id="btnActive" class="active">Active</button>
+    <button id="btnPending">Pending</button>
+  </div>
+
+  <div id="activeTasks" class="task-container active">
+    <h2>Active Tasks</h2>
+    <ul>
+      <li>Task 1: Complete the project</li>
+      <li>Task 2: Write a blog post</li>
+    </ul>
+  </div>
+
+  <div id="pendingTasks" class="task-container">
+    <h2>Pending Tasks</h2>
+    <ul>
+      <li>Task A: Submit the report</li>
+      <li>Task B: Prepare a presentation</li>
+    </ul>
+  </div>
+
+  <script>
+    const btnActive = document.getElementById("btnActive");
+    const btnPending = document.getElementById("btnPending");
+    const activeTasks = document.getElementById("activeTasks");
+    const pendingTasks = document.getElementById("pendingTasks");
+
+    btnActive.addEventListener("click", () => {
+      // Show Active Tasks
+      activeTasks.classList.add("active");
+      pendingTasks.classList.remove("active");
+      
+      // Highlight the Active button
+      btnActive.classList.add("active");
+      btnPending.classList.remove("active");
+    });
+
+    btnPending.addEventListener("click", () => {
+      // Show Pending Tasks
+      pendingTasks.classList.add("active");
+      activeTasks.classList.remove("active");
+      
+      // Highlight the Pending button
+      btnPending.classList.add("active");
+      btnActive.classList.remove("active");
+    });
+  </script>
+</body>
+</html>
