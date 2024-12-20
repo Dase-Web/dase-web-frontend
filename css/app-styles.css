@@ -247,6 +247,19 @@ body{
   .each-task-history-card{
     background-color: #5e36a449;
     margin-bottom: 10px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
+  }
+.each-task-history-card-head{
+    font-weight: 600;
+    text-align: left;
+}
+.each-task-history-card-date{
+    color: #585454;
+}
+.task-history-price{
+    float: right;
+    color: #4caf50;
+    font-weight: 600;
+    font-size: 20px;
   }
