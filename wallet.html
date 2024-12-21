@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app-styles.css">
+    <title>Browse Tasks</title>
+</head>
+<body>
+    <div class="app-top">
+        <div class="app-nav">
+            <div class="logo">
+                Dase Web
+            </div>
+
+            <div class="hamburger-menu" id="hamburger">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 7L4 7" stroke="#673AB7" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M20 12L4 12" stroke="#673AB7" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M20 17L4 17" stroke="#673AB7" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+            </div>
+            </div>
+                <div class="mobile-menu">
+                    <ul id="mobile-menu" class="hidden">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Browse Taks</a></li>
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Setting</a></li>
+                        <li><a href="#">Logout</a></li>
+                </ul>
+                </div>
+    </div>
+    
+    <div class="wallet-dash-top">
+        <div class="wallet-dash-top-head" >
+                Wallet
+            </div>
+            <div class="wallet-dashboard-card">
+                <div>
+                    <div>
+                        Wallet Balance
+                    </div>
+                    <div>
+                        &#8358; 2000
+                        <button class="wallet-dashboard-card-button">
+                            Withdraw
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+
+
+    <div class="user-dashboard-task-history-section">
+        <div class="user-dashboard-task-history">Withdraw History</div>        
+          <div id="completedTasks" class="task-history-container active">
+            <div class="each-task-history-card" >
+                <div class="each-task-history-card-head">
+                    Follow X Account <span class="task-history-price"> + &#8358; 40</span>
+                </div>
+                <div class="each-task-history-card-date">
+                    Today 9:44
+                </div>
+                
+            </div> 
+            <div class="each-task-history-card" >
+                <div class="each-task-history-card-head">
+                    Watch Youtube Video <span class="task-history-price"> + &#8358; 40</span>
+                </div>
+                <div class="each-task-history-card-date">
+                    Today 9:44
+                </div>
+                
+            </div> 
+          </div>
+        
+    </div>
+
+    <div class="user-dashboard-task-history-section">
+        <div class="user-dashboard-task-history">Earning History</div>
+        
+          <div id="completedTasks" class="task-history-container active">
+            <div class="each-task-history-card" >
+                <div class="each-task-history-card-head">
+                    Follow X Account <span class="task-history-price"> + &#8358; 40</span>
+                </div>
+                <div class="each-task-history-card-date">
+                    Today 9:44
+                </div>
+                
+            </div> 
+            <div class="each-task-history-card" >
+                <div class="each-task-history-card-head">
+                    Watch Youtube Video <span class="task-history-price"> + &#8358; 40</span>
+                </div>
+                <div class="each-task-history-card-date">
+                    Today 9:44
+                </div>
+                
+            </div> 
+          </div>
+        
+    </div>
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('visible');
+    })
+</script>
+<script>
+    const btnActive = document.getElementById("btnActive");
+    const btnPending = document.getElementById("btnPending");
+    const activeTasks = document.getElementById("completedTasks");
+    const pendingTasks = document.getElementById("pendingTasks");
+
+    btnActive.addEventListener("click", () => {
+      // Show Active Tasks
+      activeTasks.classList.add("active");
+      pendingTasks.classList.remove("active");
+      
+      // Highlight the Active button
+      btnActive.classList.add("active");
+      btnPending.classList.remove("active");
+    });
+
+    btnPending.addEventListener("click", () => {
+      // Show Pending Tasks
+      pendingTasks.classList.add("active");
+      activeTasks.classList.remove("active");
+      
+      // Highlight the Pending button
+      btnPending.classList.add("active");
+      btnActive.classList.remove("active");
+    });
+  </script>
+</html>

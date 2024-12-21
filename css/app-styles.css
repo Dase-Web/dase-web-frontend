@@ -59,15 +59,14 @@ body{
     padding: 10px;
     border-radius: 5px;
     position: absolute;
-    right: 0;
+    right: 40%;
     left: 0;
-    bottom: 0;
+    bottom: 10px;
     background-color: #673AB7;
     opacity: 0.95;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
 
-    top: 50px;
+    top: 60px;
 }
 .mobile-menu ul.visible{
     display: flex;
@@ -179,7 +178,7 @@ body{
 
 .user-dash-greeting{
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -194,6 +193,7 @@ body{
     padding: 10px;
     color: white;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 .user-dash-button{
     display: flex;
@@ -213,7 +213,7 @@ body{
 }
 .user-dashboard-task-history{
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -223,8 +223,9 @@ body{
 
 .button-container {
     margin-bottom: 20px;
+    padding-top: 10px;
   }
-  button {
+  .button-container button {
     padding: 10px 20px;
     margin-right: 10px;
     cursor: pointer;
@@ -233,7 +234,7 @@ body{
     background-color: lavender;
     color: #7d43e3;
   }
-  button.active {
+  .button-container button.active {
     background-color: #7d43e3;
     color: white;
   }
@@ -251,8 +252,9 @@ body{
     border-radius: 10px;
   }
 .each-task-history-card-head{
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
+    font-size: 1rem;
 }
 .each-task-history-card-date{
     color: #585454;
@@ -261,5 +263,38 @@ body{
     float: right;
     color: #4caf50;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1rem;
   }
+
+.wallet-dash-top{
+    background-color: #7d43e3;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.wallet-dash-top-head{
+    color: #FFFF;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.wallet-dashboard-card{
+    color: black;
+    background-color: gold;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.wallet-dashboard-card-button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    text-align: right;
+    margin-left: 20px;
+}
+.wallet-dashboard-card-button button{
+    vertical-align: top;
+    text-align: right;
+    
+}
