@@ -59,14 +59,14 @@ body{
     padding: 10px;
     border-radius: 5px;
     position: absolute;
-    right: 40%;
-    left: 0;
-    bottom: 10px;
+    right: 15%;
+    left: 15%;
+    bottom: 40%;
     background-color: #673AB7;
     opacity: 0.95;
     align-items: start;
 
-    top: 60px;
+    top: 65px;
 }
 .mobile-menu ul.visible{
     display: flex;
@@ -282,6 +282,7 @@ body{
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
+    padding-bottom: 30px;
 }
 .wallet-dashboard-card-button{
     background-color: black;
@@ -290,8 +291,7 @@ body{
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-    text-align: right;
-    margin-left: 20px;
+    margin-top: 20px;
 }
 .wallet-dashboard-card-button button{
     vertical-align: top;
