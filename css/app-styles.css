@@ -66,10 +66,11 @@ body{
 }
 
 .app-nav-head{
-    font-family: Intter;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     padding: 25px;
+    color: white;
+    background-color: #673AB7;
 }
 
 .tasks-search{
@@ -268,7 +269,7 @@ body{
 }
 .wallet-dash-top-head{
     color: #FFFF;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 .wallet-dashboard-card{
@@ -279,9 +280,17 @@ body{
     border-radius: 10px;
     padding-bottom: 30px;
 }
+.wallet-dashboard-card-text{
+    color: #585454;
+}
+.wallet-dashboard-card-amount{
+    font-weight: bold;
+    font-size: 26px;
+}
 .wallet-dashboard-card-button{
     background-color: black;
     color: white;
+    margin-right: 10px;
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
