@@ -93,33 +93,29 @@ body{
     background-color: #673AB7;
 }
 
-.tasks-search{
-    text-align: center;
-    margin: 1rem 0;
-}
-.tasks-search input{
-    width: 80%;
-    max-width: 500px;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
 .tasks-grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    padding: 0;
 }
+
 .each-task{
     background-color: white;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-right: 0;
     border: 1px solid rgba(203, 199, 199, 0.894);
     border-radius: 16px;
     padding: 30px;
     cursor: pointer;
     
+}
+@media (min-width: 400px){
+    .tasks-grid{
+        padding: 1rem;
+    }
+    .each-task{
+        margin-right: 10px;
+    }
 }
 .each-task:hover{
     background-color: #f4f1fa;
