@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app-styles.css">
-    <title>Browse Tasks</title>
+    <title>User Dashboard </title>
 </head>
 <body>
+    <div class="app-container">
     <div class="app-top">
         <div class="app-nav">
             <div class="logo">
@@ -27,11 +28,10 @@
             </div>
                 <div class="mobile-menu">
                     <ul id="mobile-menu" class="hidden">
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Browse Taks</a></li>
-                        <li><a href="#">Wallet</a></li>
+                        <li><a href="/user_dashboard.html">Dashboard</a></li>
+                        <li><a href="/tasks.html">Tasks</a></li>
+                        <li><a href="/wallet.html">Wallet</a></li>
                         <li><a href="#">Profile</a></li>
-                        <li><a href="#">Setting</a></li>
                         <li><a href="#">Logout</a></li>
                 </ul>
                 </div>
@@ -45,13 +45,16 @@
 
     <div class="user-dashboard-card">
         <div>
-            Tasks Completed: 1
+            Completed Tasks: 1
         </div>
         <div>
-            Tasks Pending: 10
+            Tasks Pending: -
         </div>
         <div>
-            Earned: 10 NGN
+            Earned: 
+        </div>
+        <div>
+            10 NGN
         </div>
     </div>
 
@@ -96,10 +99,10 @@
 
     <div class="user-dashboard-task-history-section">
         <div class="user-dashboard-task-history">Tasks History</div>
-        <div class="button-container">
-            <button id="btnActive" class="active">Active</button>
-            <button id="btnPending">Pending</button>
-          </div>
+        <section class="task-controls">
+            <button id="btnActive" class="control-button active">Active Tasks</button>
+            <button id="btnPending" class="control-button">Pending Tasks</button>
+        </section>
         
           <div id="completedTasks" class="task-history-container active">
             <div class="each-task-history-card" >
@@ -144,6 +147,7 @@
               
           </div>
     </div>
+</div>
 </body>
 <script>
     const hamburger = document.getElementById('hamburger');

@@ -56,28 +56,25 @@
                         </div>
                 </ul>
         </header>
-    <div class="auth-body">
+    <div class="auth-body-signup">
     <div class="auth-container">
         <h1 class="auth-head">Create your account</h1>
         <form>
             <label for="full-name">Full Name</label>
-            <input type="text" id="full-name" name="full-name">
+            <input type="text" id="full-name" name="full-name" placeholder="Full Name">
 
             <label for="username">Username</label>
-            <input type="text" id="username" name="username">
+            <input type="text" id="username" name="username" placeholder="Username">
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" placeholder="Email">
 
             <label for="password">Password</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" placeholder="Password">
 
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password">
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
 
-            <label for="country">Country</label>
-            <input type="text" id="country" name="country">
-    
             <button type="submit">Create account</button>
         </form>
         <div class="auth-text">
@@ -89,4 +86,12 @@
     </div>
 </div>
 </body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('visible');
+    })
+</script>
 </html>
