@@ -255,12 +255,15 @@
 </div>
 </body>
 <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-    hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('visible');
-    })
+        hamburger.addEventListener('click', () => {
+            const isVisible = mobileMenu.classList.toggle('visible');
+            hamburger.setAttribute('aria-expanded', isVisible);
+        });
+    });
 </script>
 <script>
     const btnActive = document.getElementById("btnActive");
@@ -288,22 +291,4 @@
       btnActive.classList.remove("active");
     });
   </script>
-
-
-
-
-    
-</div>
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        hamburger.addEventListener('click', () => {
-            const isVisible = mobileMenu.classList.toggle('visible');
-            hamburger.setAttribute('aria-expanded', isVisible);
-        });
-    });
-</script>
 </html>
